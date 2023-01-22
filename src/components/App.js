@@ -10,7 +10,7 @@ const App = () => {
   const inputRef = useRef();
 
   const onButtonClick = () => {
-    
+    inputRef.current.focus()
     setList([]);
     for (let i = 1; i < Number(value) + 1; i++) {
       setList((prev) => [...prev, i]);
