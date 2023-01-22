@@ -3,7 +3,7 @@ import ListItems from './ListItems';
 
  const List = ({listx}) =>{
   return(
-    <div>
+    <>
     {listx.map((i,index) => {
       return(
         <Fragment key={index}>
@@ -11,7 +11,7 @@ import ListItems from './ListItems';
         </Fragment>
         )
     })}
-    </div>
+    </>
   )
 }
 
